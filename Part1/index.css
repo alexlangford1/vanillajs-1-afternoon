@@ -6,12 +6,13 @@
 
   nav {
       height: 15vh;
-      background: #444;
-      color: #DDD;
+      background-image: linear-gradient(to right, purple, rgb(71, 70, 70));
+      color: whitesmoke;
+      
   }
 
   main {
-      background: #EEE;
+      background-image: linear-gradient(to right, rgb(201, 197, 197), #eee,#eee,#eee,#eee,#eee, #eee, #eee, rgb(201, 201, 201));
       height: 85vh;
   }
 
@@ -21,6 +22,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 22px;
   }
 
   table {
@@ -33,4 +35,73 @@
     border: 1px solid #000;
     text-align: center;
     font-size: 2em;
+}
+
+
+.row td:hover {
+    height: 120px;
+    width: 120px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 2em;
+    background-color: #d8d8d8;
+  background-size: 10%;
+  transition: background .4s;
+}
+
+
+#dialogoverlay{
+    display: none;
+    opacity: .75;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #FFF;
+    width: 100%;
+    z-index: 10;
+  }
+  #dialogbox{
+    display: none;
+    position: fixed;
+    background: #0000;
+    border-radius:7px; 
+    width:550px;
+    z-index: 10;
+  }
+  #dialogbox > div{ background:#FFF; box-shadow: 20px 20px 10px grey}
+  #dialogbox > div > #dialogboxhead{ background-image: linear-gradient(to right, purple, rgb(70, 70, 70)); font-size:19px; padding:10px; color:#CCC;}
+  #dialogbox > div > #dialogboxbody{ background:#333; padding:20px; color:#FFF; text-align: center; font-size: 25px}
+  #dialogbox > div > #dialogboxfoot{background-image: linear-gradient(to right, rgb(70, 70, 70), purple); padding:10px; text-align:right; }
+  
+  p {
+       font-size: 30px;
+       display: flex;
+      justify-content: center;
+      align-items: center;
+       font-weight: 700;
+       padding: 10px;
+   }
+   #okBtn {
+       background: rgb(49, 49, 49);
+       border-radius: 3px;
+       padding: 5px;
+       font-family:   Arial;
+    color: whitesmoke;
+   }
+   #foooter {
+    height: 15vh;
+    background-image: linear-gradient(to right, rgb(71, 70, 70), purple);
+    color: whitesmoke;
+   position: fixed;
+   bottom: 0;
+   left:0;
+    width: 100%;
+}
+.butn {
+    position: fixed;
+    left: 49%; 
+    padding: 6px;
+    background: #a5a4a4;
+    border-radius: 6px;
+    font-weight: bold
 }

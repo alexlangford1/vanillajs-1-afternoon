@@ -1,0 +1,81 @@
+body {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    background-image: linear-gradient(-141deg, #f681AA 0%, #644AEA 100%);
+    color: white;
+    padding: 0 100px;
+    overflow: hidden;
+}
+
+
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+.nav{
+    display: flex;
+    justify-content: space-between; 
+    width: 500px;
+    font-size: 20px;
+}
+
+.inner-content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+
+h1 {
+    font-size: 92px;
+    font-weight: 100;
+    margin-bottom: 45px
+}
+
+
+.inner-content p {
+    font-size:  22px;
+    margin-bottom: 45px;
+}
+
+
+.main-cta {
+        background: #f681aa;
+        margin: 5px;
+        outline: none;
+        overflow: hidden;
+        border: none;
+        color: azure;
+        padding: 10px;
+        opacity: .8;
+        width: 250px;
+        height: 45px;
+        border-radius: 6px;
+        font-size: 16px;
+        box-shadow: 20px 20px 24px rgba(0,0,0,0.11)
+    }
+
+.main-cta:hover { background: rgb(37, 37, 37);
+    margin: 5px;
+    outline: none;
+    overflow: hidden;
+    border: none;
+    color: azure;
+    padding: 10px;
+   
+} 
+
+.phone {
+    position: absolute;
+    right: 100px;
+    bottom: -185px;
+    width: 320px;
+
+}
